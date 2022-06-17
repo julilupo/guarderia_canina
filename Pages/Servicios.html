@@ -9,98 +9,100 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../Style/style.css">
+    <link rel="stylesheet" href="../css/styles.css">
     <title>Guardería Canina</title>
 </head>
 <body>
 
   <!-- Header/Nav -->
 
-    <header>
-        <nav class="navegador navbar navbar-expand-lg p-0">
-            <div class="container">
-              <a class="navbar-brand" href="../index.html"><img class="logo" src="../Assets/logo.png" alt="Logo Guarderia Canina"></a>
-                <button class="navbar-toggler text-white" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
-                <ul class="navegador__lista navbar-nav fs-5 text-center">
-                  <li class="nav-item ms-5 me-5">
-                    <a class="nav-link" href="#"><i class="fa-solid fa-paw me-2"></i>Servicios</a>
-                  </li>
-                  <li class="nav-item ms-5 me-5">
-                    <a class="nav-link" href="Quienessomos.html"><i class="fa-solid fa-paw me-2"></i>Quienes Somos</a>
-                  </li>
-                  <li class="nav-item ms-5 me-5">
-                    <a class="nav-link" href="Nuestroespacio.html"><i class="fa-solid fa-paw me-2"></i>Nuestro Espacio</a>
-                  </li>
-                  <li class="nav-item ms-5 me-5">
-                    <a class="nav-link" href="Contactanos.html"><i class="fa-solid fa-paw me-2"></i>Contactanos</a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </nav>
-    </header>
+  <header>
+    <nav class="navegador navbar navbar-expand-lg p-0">
+      <div class="container">
+        <a class="navbar-brand" href="../index.html"><img class="navegador__logo" src="../Assets/logo.png" alt="Logo Guarderia Canina"></a>
+        <button class="navbar-toggler text-white" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+          <ul class="navbar-nav fs-5 text-center">
+            <li class="nav-item ms-5 me-5">
+              <a class="navegador__link nav-link" href="../Pages/Servicios.html"><i class="fa-solid fa-paw me-2"></i>Servicios</a>
+            </li>
+            <li class="nav-item ms-5 me-5">
+              <a class="navegador__link nav-link" href="../Pages/Quienessomos.html"><i class="fa-solid fa-paw me-2"></i>Quienes Somos</a>
+            </li>
+            <li class="nav-item ms-5 me-5">
+              <a class="navegador__link nav-link" href="../Pages/Nuestroespacio.html"><i class="fa-solid fa-paw me-2"></i>Nuestro
+                Espacio</a>
+            </li>
+            <li class="nav-item ms-5 me-5">
+              <a class="navegador__link nav-link" href="./Pages/Contactanos.html"><i class="fa-solid fa-paw me-2"></i>Contactanos</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
 
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 170"><path fill="#f26900" fill-opacity="1" d="M0,64L60,64C120,64,240,64,360,85.3C480,107,600,149,720,138.7C840,128,960,64,1080,58.7C1200,53,1320,107,1380,133.3L1440,160L1440,0L1380,0C1320,0,1200,0,1080,0C960,0,840,0,720,0C600,0,480,0,360,0C240,0,120,0,60,0L0,0Z"></path></svg>
 
   <!-- Main Section -->
 
 
-  <main class="mainServicios">
+  <main class="servicios">
     <section class="pb-5">
-      <div class="textoServicios container d-flex flex-column justify-content-center align-items-center">
+      <div class="servicios__texto container d-flex flex-column justify-content-center align-items-center">
         <h1 class="text-uppercase text-center fs-1 pt-5 pb-5">Nuestros Servicios</h1>
         <p class="lh-lg fs-5">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nostrum dolorem itaque dolore fugiat nulla pariatur ex. Vel ut, consequuntur libero ipsa ipsum optio saepe ratione aspernatur pariatur facere repellat perspiciatis. Iusto, quaerat beatae? Consectetur voluptates ipsa, repellat cupiditate quis aliquid veniam ab enim ratione reprehenderit deserunt, mollitia odio quibusdam illum.</p>
-        <ul class="listServicios row row-cols-md-2 row-cols-1 lh-lg fs-5 mt-5">
-          <li class="col">Peluquería</li>
-          <li class="col">Guardería/Residencia</li>
-          <li class="col">Adiestramiento</li>
-          <li class="col">Psicología animal</li>
+        <ul class= "row row-cols-md-2 row-cols-1 lh-lg fs-5 mt-5">
+          <li class="servicios__list col">Peluquería</li>
+          <li class="servicios__list col">Guardería/Residencia</li>
+          <li class="servicios__list col">Adiestramiento</li>
+          <li class="servicios__list col">Psicología animal</li>
         </ul>
       </div>
-      <hr class="mt-5 mb-5">
+      <hr class="servicios__hr mt-5 mb-5">
       <div class="container d-flex flex-column justify-content-evenly align-items-center">
         <div class="row justify-content-center align-items-center">
           <div class="col-md-6 col-sm-12 d-flex flex-column justify-content-evenly align-items-center">
             <h3 class="text-center text-decoration-underline p-3">Peluquería</h3>
             <p class="text-center lh-lg p-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti nam, aperiam aliquam ad iure quo ut laborum pariatur praesentium consectetur atque sint alias similique architecto vitae perspiciatis corporis adipisci ducimus! Atque repellat quia cumque consectetur perspiciatis sed ducimus iste consequuntur!</p>
             <h5 class="text-center p-3">Beneficios:</h5>
-            <ul class="listPeluqueria row row-cols-2 lh-lg justify-content-center align-items-center">
-              <li class="col text-center">Beneficio 1</li>
-              <li class="col text-center">Beneficio 2</li>
-              <li class="col text-center">Beneficio 3</li>
-              <li class="col text-center">Beneficio 4</li>
-              <li class="col text-center">Beneficio 5</li>
-              <li class="col text-center">Beneficio 6</li>
+            <ul class="row row-cols-2 lh-lg justify-content-center align-items-center">
+              <li class="servicios__list col text-center">Beneficio 1</li>
+              <li class="servicios__list col text-center">Beneficio 2</li>
+              <li class="servicios__list col text-center">Beneficio 3</li>
+              <li class="servicios__list col text-center">Beneficio 4</li>
+              <li class="servicios__list col text-center">Beneficio 5</li>
+              <li class="servicios__list col text-center">Beneficio 6</li>
             </ul>
           </div>
           <div class="col-md-6 col-sm-12 d-flex justify-content-center align-items-center">           
-              <img class="imgPeluqueria img-fluid p-2" src="../Assets/Peluqueria 1.jpg" alt="Imágen de la peluquería">
+              <img class="servicios__img img-fluid p-2" id="peluqueria" src="../Assets/Peluqueria 1.jpg" alt="Imágen de la peluquería">
           </div>
         </div>        
       </div>
-      <hr class="mt-5 mb-5">
+      <hr class="servicios__hr mt-5 mb-5">
       <div class="container d-flex flex-column justify-content-evenly align-items-center">
         <div class="row justify-content-center align-items-center">
           <div class="col-md-6 col-sm-12 d-flex justify-content-center">
-            <img class="imgGuarderia img-fluid p-2" src="../Assets/Guardería 1.jpg" alt="Imágen de la guardería">
+            <img class="servicios__img img-fluid p-2" id="guarderia" src="../Assets/Guardería 1.jpg" alt="Imágen de la guardería">
           </div>
           <div class="col-md-6 col-sm-12 d-flex flex-column justify-content-evenly align-items-center">
             <h3 class="text-center text-decoration-underline p-3">Guardería/Residencia</h3>
             <p class="lh-lg">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae quod exercitationem, voluptatem enim voluptatibus temporibus pariatur quidem velit nam delectus!</p>
             <h5 class="text-center p-3">Te ofrecemos:</h5>
             <div class="row justify-content-center align-items-center">
-              <div class="servGuard col-lg-4 col-md-12 d-flex flex-column justify-content-center align-items-center">
+              <div class="servicio__item col-lg-4 col-md-12 d-flex flex-column justify-content-center align-items-center">
                 <h6 class="fw-semibold text-center"><i class="fa-solid fa-truck pe-2"></i>Transportar a tu mascota</h6>
                 <p class="text-center">Disponemos de servicio de búsqueda y transporte de mascotas</p>
               </div>
-              <div class="servGuard col-lg-4 col-md-12 d-flex flex-column justify-content-center align-items-center">
+              <div class="servicio__item col-lg-4 col-md-12 d-flex flex-column justify-content-center align-items-center">
                 <h6 class="fw-semibold text-center"><i class="fa-solid fa-clock pe-2"></i>El tiempo que necesites</h6>
                 <p class="text-center">Nos adaptamos a tus necesidades. Tenemos precio por horas y días sueltos.</p>
               </div>
-              <div class="servGuard col-lg-4 col-md-12 d-flex flex-column justify-content-center align-items-center">
+              <div class="servicio__item col-lg-4 col-md-12 d-flex flex-column justify-content-center align-items-center">
                 <h6 class="fw-semibold text-center"><i class="fa-solid fa-dog pe-2"></i>Cuidamos de tu perro</h6>
                 <p class="text-center">Un espacio pensado para que esté siempre cómodo y pueda jugar tranquilo.</p>
               </div>
@@ -108,7 +110,7 @@
           </div>
         </div>
       </div>
-      <hr class="mt-5 mb-5">
+      <hr class="servicios__hr mt-5 mb-5">
       <div class="container d-flex flex-column justify-content-evenly align-items-center">
         <div class="row justify-content-center align-items-center">
           <div class="col-md-6 col-sm-12  d-flex flex-column justify-content-center align-items-center">
@@ -116,26 +118,26 @@
             <p class="text-center lh-lg p-3">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Labore quo in tempora ipsum? Consequatur, possimus iure nobis iusto, velit repellendus, illum obcaecati sapiente reiciendis in aliquam ea vel officiis! Veniam aperiam sed illum eligendi fugit? Adipisci architecto quas, quasi dignissimos consequuntur totam sit provident culpa iste repellat expedita cupiditate delectus.</p>
           </div>
           <div class="col-md-6 col-sm-12  d-flex justify-content-center">
-            <img class="imgPsicologia img-fluid p-2" src="../Assets/Psicologia 1.jpg" alt="Un perro y un humano dandose la mano/pata">
+            <img class="servicios__img img-fluid p-2" id="psicologia" src="../Assets/Psicologia 1.jpg" alt="Un perro y un humano dandose la mano/pata">
           </div>
         </div>
       </div>
-      <hr class="mt-5 mb-5">
+      <hr class="servicios__hr mt-5 mb-5">
       <div class="container d-flex flex-column justify-content-evenly align-items-center">
         <div class="row justify-content-center align-items-center">
           <div class="col-md-6 col-sm-12  d-flex justify-content-center">
-            <img class="imgAdiestramiento img-fluid p-2" src="../Assets/adiestramiento-canino.jpg" alt="Un perro con la correa en la boca">
+            <img class="servicios__img img-fluid p-2" id="adiestramiento" src="../Assets/adiestramiento-canino.jpg" alt="Un perro con la correa en la boca">
           </div>
           <div class="col-md-6 col-sm-12 d-flex flex-column justify-content-center align-items-center">
             <h3 class="text-center text-decoration-underline p-3">Escuela de Adiestramiento</h3>
             <p class="text-center lh-lg p-3">Distintos niveles de adiestramiento, con nosotros aprenderá:</p>
-            <ul class="listAdiestramiento row row-cols-2 lh-lg justify-content-center align-items-center">
-              <li class="col text-center">Lección 1</li>
-              <li class="col text-center">Lección 2</li>
-              <li class="col text-center">Lección 3</li>
-              <li class="col text-center">Lección 4</li>
-              <li class="col text-center">Lección 5</li>
-              <li class="col text-center">Lección 6</li>
+            <ul class="row row-cols-2 lh-lg justify-content-center align-items-center">
+              <li class="servicios__list col text-center">Lección 1</li>
+              <li class="servicios__list col text-center">Lección 2</li>
+              <li class="servicios__list col text-center">Lección 3</li>
+              <li class="servicios__list col text-center">Lección 4</li>
+              <li class="servicios__list col text-center">Lección 5</li>
+              <li class="servicios__list col text-center">Lección 6</li>
             </ul>
           </div>
         </div>
@@ -146,29 +148,29 @@
 
   <!-- Pie de página -->
 
-    <footer class="pieDePagina mt-5 container-fluid">
-        <div class="container">
-          <div class="row justify-content-center">
-            <div class="col-6 mt-2 d-flex justify-content-center align-items-center text-white">
-              <ul class="footer__list">
-                <li><a href="#">Preguntas Frecuentes</a></li>
-                <li><a href="#">Métodos de Pago</a></li>
-                <li><a href="#">Promociones</a></li>
-              </ul>
-            </div>
-            <div class="col-6 mt-2 d-flex justify-content-center align-items-center text-white">
-              <ul class="footer__list">
-                <li><a href="#"><i class="fa-brands fa-instagram me-1"></i>Instagram</a></li>
-                <li><a href="#"><i class="fa-brands fa-facebook-square me-1"></i>Facebook</a></li>
-                <li><a href="#"><i class="fa-brands fa-youtube me-1"></i>YouTube</a></li>
-              </ul>
-            </div>
-          </div>
-          <div class="row justify-content-center text-white mt-4">
-            <div class="col-12 text-center">&copy Copyright 2022 - Julieta Lupo</div>
-          </div>
+  <footer class="footer mt-5 container-fluid">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-6 mt-2 d-flex justify-content-center align-items-center text-white">
+          <ul>
+            <li class="footer__list"><a class="footer__link" href="#">Preguntas Frecuentes</a></li>
+            <li class="footer__list"><a class="footer__link" href="#">Métodos de Pago</a></li>
+            <li class="footer__list"><a class="footer__link" href="#">Promociones</a></li>
+          </ul>
         </div>
-    </footer>
+        <div class="col-6 mt-2 d-flex justify-content-center align-items-center text-white">
+          <ul>
+            <li class="footer__list"><a class="footer__link" href="#"><i class="fa-brands fa-instagram me-1"></i>Instagram</a></li>
+            <li class="footer__list"><a class="footer__link" href="#"><i class="fa-brands fa-facebook-square me-1"></i>Facebook</a></li>
+            <li class="footer__list"><a class="footer__link" href="#"><i class="fa-brands fa-youtube me-1"></i>YouTube</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="row justify-content-center text-white mt-4">
+        <div class="col-12 text-center">&copy Copyright 2022 - Julieta Lupo</div>
+      </div>
+    </div>
+  </footer>
     
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>    
 </body>

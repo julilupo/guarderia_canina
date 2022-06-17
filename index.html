@@ -11,7 +11,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="Style/style.css">
+  <link rel="stylesheet" href="css/styles.css">
   <title>Guardería Canina</title>
 </head>
 <body>
@@ -21,25 +21,25 @@
   <header>
     <nav class="navegador navbar navbar-expand-lg p-0">
       <div class="container">
-        <a class="navbar-brand" href="#"><img class="logo" src="Assets/logo.png" alt="Logo Guarderia Canina"></a>
+        <a class="navbar-brand" href="#"><img class="navegador__logo" src="Assets/logo.png" alt="Logo Guarderia Canina"></a>
         <button class="navbar-toggler text-white" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
           aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
-          <ul class="navegador__lista navbar-nav fs-5 text-center">
+          <ul class="navbar-nav fs-5 text-center">
             <li class="nav-item ms-5 me-5">
-              <a class="nav-link" href="Pages/Servicios.html"><i class="fa-solid fa-paw me-2"></i>Servicios</a>
+              <a class="navegador__link nav-link" href="Pages/Servicios.html"><i class="fa-solid fa-paw me-2"></i>Servicios</a>
             </li>
             <li class="nav-item ms-5 me-5">
-              <a class="nav-link" href="Pages/Quienessomos.html"><i class="fa-solid fa-paw me-2"></i>Quienes Somos</a>
+              <a class="navegador__link nav-link" href="Pages/Quienessomos.html"><i class="fa-solid fa-paw me-2"></i>Quienes Somos</a>
             </li>
             <li class="nav-item ms-5 me-5">
-              <a class="nav-link" href="Pages/Nuestroespacio.html"><i class="fa-solid fa-paw me-2"></i>Nuestro
+              <a class="navegador__link nav-link" href="Pages/Nuestroespacio.html"><i class="fa-solid fa-paw me-2"></i>Nuestro
                 Espacio</a>
             </li>
             <li class="nav-item ms-5 me-5">
-              <a class="nav-link" href="Pages/Contactanos.html"><i class="fa-solid fa-paw me-2"></i>Contactanos</a>
+              <a class="navegador__link nav-link" href="Pages/Contactanos.html"><i class="fa-solid fa-paw me-2"></i>Contactanos</a>
             </li>
           </ul>
         </div>
@@ -53,8 +53,8 @@
     <section class="hero container-fluid">
       <div class="row justify-content-center">
         <div class="col-12 text-center text-white mt-5 mb-3">
-          <h1 class="titulo text-uppercase">Guardería Canina</h1>
-          <h5 class="subtitulo mt-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam assumenda amet
+          <h1 class="hero__titulo text-uppercase">Guardería Canina</h1>
+          <h5 class="hero__subtitulo mt-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam assumenda amet
             atque expedita ea placeat rerum temporibus et voluptatem provident. Ipsam placeat eius tenetur ipsa aliquid
             laborum et consequuntur. Necessitatibus?</h5>
         </div>
@@ -69,15 +69,15 @@
                 aria-label="Slide 3"></button>
             </div>
             <div class="carousel-inner">
-              <div class="perros carousel-item active">
-                <img src="./Assets/Carrousel 1.jpg" class="d-block w-100 img-fluid"
+              <div class="carousel-item active">
+                <img src="./Assets/Carrousel 1.jpg" class="hero__img d-block w-100 img-fluid"
                   alt="Perros jugando en la guardería">
               </div>
-              <div class="perros carousel-item">
-                <img src="./Assets/Carrousel 2.jpg" class="d-block w-100 img-fluid" alt="La guardería canina">
+              <div class="carousel-item">
+                <img src="./Assets/Carrousel 2.jpg" class="hero__img d-block w-100 img-fluid" alt="La guardería canina">
               </div>
-              <div class="perros carousel-item">
-                <img src="./Assets/Carrousel 3.jpg" class="d-block w-100 img-fluid"
+              <div class="carousel-item">
+                <img src="./Assets/Carrousel 3.jpg" class="hero__img d-block w-100 img-fluid"
                   alt="Perros jugando en nuestro lugar">
               </div>
             </div>
@@ -151,21 +151,21 @@
 
 <!-- Pie de página -->
 
-  <footer class="pieDePagina mt-5 container-fluid">
+  <footer class="footer mt-5 container-fluid">
     <div class="container">
       <div class="row justify-content-center">
         <div class="col-6 mt-2 d-flex justify-content-center align-items-center text-white">
-          <ul class="footer__list">
-            <li><a href="#">Preguntas Frecuentes</a></li>
-            <li><a href="#">Métodos de Pago</a></li>
-            <li><a href="#">Promociones</a></li>
+          <ul>
+            <li class="footer__list"><a class="footer__link" href="#">Preguntas Frecuentes</a></li>
+            <li class="footer__list"><a class="footer__link" href="#">Métodos de Pago</a></li>
+            <li class="footer__list"><a class="footer__link" href="#">Promociones</a></li>
           </ul>
         </div>
         <div class="col-6 mt-2 d-flex justify-content-center align-items-center text-white">
-          <ul class="footer__list">
-            <li><a href="#"><i class="fa-brands fa-instagram me-1"></i>Instagram</a></li>
-            <li><a href="#"><i class="fa-brands fa-facebook-square me-1"></i>Facebook</a></li>
-            <li><a href="#"><i class="fa-brands fa-youtube me-1"></i>YouTube</a></li>
+          <ul>
+            <li class="footer__list"><a class="footer__link" href="#"><i class="fa-brands fa-instagram me-1"></i>Instagram</a></li>
+            <li class="footer__list"><a class="footer__link" href="#"><i class="fa-brands fa-facebook-square me-1"></i>Facebook</a></li>
+            <li class="footer__list"><a class="footer__link" href="#"><i class="fa-brands fa-youtube me-1"></i>YouTube</a></li>
           </ul>
         </div>
       </div>

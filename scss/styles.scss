@@ -1,3 +1,14 @@
-body {
-    font-family: 'Rubik', sans-serif;
-}
+@import "./modulos/variables";
+@import "./modulos/body";
+@import "./modulos/navegador";
+@import "./modulos/index";
+@import "./modulos/nuestroespacio";
+@import "./modulos/quienessomos";
+@import "./modulos/servicios";
+@import "./modulos/contacto";
+@import "./modulos/footer";
+@import "./modulos/media1024";
+@import "./modulos/media992";
+@import "./modulos/media768";
+@import "./modulos/media425";
+

@@ -1,0 +1,19 @@
+.nosotros{
+    color: $grey;
+    background-color: $orange;
+    background-image: linear-gradient(180deg, #f26900 0%, #ffffff 25%);
+    &__img{
+        border-radius: 50%;
+    }
+}
+
+.equipo{
+    border: none;
+    min-height: 35rem;
+    width: 35rem;
+    &__img{
+        height: 300px;
+        width: 50%;
+        border-radius: 50%;
+    }
+}

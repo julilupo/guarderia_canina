@@ -1,0 +1,52 @@
+.servicios{
+    color: $grey;
+    &__img{
+        border: $border;
+        width: 25rem;
+        height: 19rem;
+    }
+
+    &__list{
+        list-style: none;
+    }
+
+    &__list::before{
+        content: "\2022";
+        color: $orange;
+        display: inline-block; 
+        padding-right: 25px;
+        font-size: 50px;
+        line-height: 25px;
+        vertical-align: -11px;
+        width: 15px;
+    }
+
+    &__hr{
+        margin: auto;    
+        width: 75%;
+        height: 5px;
+        background-color: $orange;
+        opacity: 0.8;
+        border: none;
+    }
+
+    &__item{
+        height: 10rem;
+    }
+}
+
+#peluqueria{
+    border-radius: 68% 32% 46% 54% / 33% 28% 72% 67%;
+}
+
+#guarderia{
+    border-radius: 60% 40% 21% 79% / 31% 63% 37% 69%;
+}
+
+#psicologia{
+    border-radius: 60% 40% 57% 43% / 33% 63% 37% 67%;
+}
+
+#adiestramiento{
+    border-radius: 60% 40% 57% 43% / 33% 22% 78% 67%;
+}

@@ -1,0 +1,20 @@
+.espacio{
+    background-image: linear-gradient(180deg, #f26900 0%, #ffffff 25%, #ffffff 75%, #f26900 99%);
+    background-color: $orange;
+    color: $grey;
+
+    &__titulo{
+        text-shadow: $shadow;
+    }
+
+    &__img{
+        border-radius: 10px;
+    }
+
+    &__instalaciones{
+        border-radius: 10px;
+        width: 25rem;
+        height: 17rem;
+    }
+
+}

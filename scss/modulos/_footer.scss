@@ -1,0 +1,16 @@
+.footer{
+    background: linear-gradient(180deg, rgba(125,125,125,1) 0%, rgba(242,105,0,1) 0%, rgba(237,49,54,1) 100%, rgba(125,125,125,1) 100%);
+    &__list{
+        list-style: none;
+        margin-top: 1rem;
+    }
+
+    &__link{
+        text-decoration: none;
+        color: #ffffff;
+    }
+
+    &__link:hover{
+        color: $grey;
+    }
+}

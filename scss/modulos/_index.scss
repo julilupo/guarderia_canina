@@ -1,0 +1,36 @@
+.hero{
+    background-image: url(../Assets/rose-petals.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    &__titulo{
+        font-size: 4rem;
+        text-shadow: $shadow;
+    }
+
+    &__subtitulo{
+        padding: 0 20rem;
+    }
+
+    &__img{
+        width: 800px;
+        height: 575px;
+    }
+
+}
+
+.carta{
+    border: $border;
+    color: $grey;
+}
+
+.boton {
+    border: $border;
+    background-color: $orange;
+    color: #ffffff;
+}
+
+.boton:hover {
+    border: $red 2px solid;
+    background-color: $red;
+}

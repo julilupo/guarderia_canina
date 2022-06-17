@@ -1,0 +1,37 @@
+@media screen and (max-width: 425px) {
+
+    /* index */
+
+    .hero__subtitulo {
+        display: none;
+    }
+
+    .hero__img {
+        height: 50vh;
+    }
+
+    /* quienes somos */
+
+    
+    .nosotros__img {
+        order: -1;
+        padding: 1rem;
+        width: auto;
+    }
+
+    .nosotros__texto {
+        flex-direction: column;
+    }
+
+    .equipo__columna {
+        width: auto;
+    }
+
+    /* Servicios */
+
+    .servicios__texto {
+        font-size: small;
+    }
+
+
+}

@@ -1,0 +1,15 @@
+.navegador {
+    background-color: $orange;
+
+        &__logo{
+            width: 8rem;
+        }
+        
+        &__link{
+            color: #ffffff;
+        }
+
+        &__link:hover{
+            color: $grey;
+        }
+}

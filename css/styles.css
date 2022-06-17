@@ -1,2 +1,173 @@
 body {
-  font-family: 'Rubik', sans-serif; }
+  font-family: "Rubik", sans-serif; }
+
+.navegador {
+  background-color: #F26900; }
+  .navegador__logo {
+    width: 8rem; }
+  .navegador__link {
+    color: #ffffff; }
+  .navegador__link:hover {
+    color: #2A2627; }
+
+.hero {
+  background-image: url(../Assets/rose-petals.svg);
+  background-repeat: no-repeat;
+  background-size: cover; }
+  .hero__titulo {
+    font-size: 4rem;
+    text-shadow: #2A2627 2px 2px 4px; }
+  .hero__subtitulo {
+    padding: 0 20rem; }
+  .hero__img {
+    width: 800px;
+    height: 575px; }
+
+.carta {
+  border: #F26900 solid 2px;
+  color: #2A2627; }
+
+.boton {
+  border: #F26900 solid 2px;
+  background-color: #F26900;
+  color: #ffffff; }
+
+.boton:hover {
+  border: #ed3136 2px solid;
+  background-color: #ed3136; }
+
+.espacio {
+  background-image: linear-gradient(180deg, #f26900 0%, #ffffff 25%, #ffffff 75%, #f26900 99%);
+  background-color: #F26900;
+  color: #2A2627; }
+  .espacio__titulo {
+    text-shadow: #2A2627 2px 2px 4px; }
+  .espacio__img {
+    border-radius: 10px; }
+  .espacio__instalaciones {
+    border-radius: 10px;
+    width: 25rem;
+    height: 17rem; }
+
+.nosotros {
+  color: #2A2627;
+  background-color: #F26900;
+  background-image: linear-gradient(180deg, #f26900 0%, #ffffff 25%); }
+  .nosotros__img {
+    border-radius: 50%; }
+
+.equipo {
+  border: none;
+  min-height: 35rem;
+  width: 35rem; }
+  .equipo__img {
+    height: 300px;
+    width: 50%;
+    border-radius: 50%; }
+
+.servicios {
+  color: #2A2627; }
+  .servicios__img {
+    border: #F26900 solid 2px;
+    width: 25rem;
+    height: 19rem; }
+  .servicios__list {
+    list-style: none; }
+  .servicios__list::before {
+    content: "\2022";
+    color: #F26900;
+    display: inline-block;
+    padding-right: 25px;
+    font-size: 50px;
+    line-height: 25px;
+    vertical-align: -11px;
+    width: 15px; }
+  .servicios__hr {
+    margin: auto;
+    width: 75%;
+    height: 5px;
+    background-color: #F26900;
+    opacity: 0.8;
+    border: none; }
+  .servicios__item {
+    height: 10rem; }
+
+#peluqueria {
+  border-radius: 68% 32% 46% 54% / 33% 28% 72% 67%; }
+
+#guarderia {
+  border-radius: 60% 40% 21% 79% / 31% 63% 37% 69%; }
+
+#psicologia {
+  border-radius: 60% 40% 57% 43% / 33% 63% 37% 67%; }
+
+#adiestramiento {
+  border-radius: 60% 40% 57% 43% / 33% 22% 78% 67%; }
+
+.contacto {
+  color: #2A2627; }
+  .contacto__texto {
+    display: block; }
+
+.footer {
+  background: linear-gradient(180deg, #7d7d7d 0%, #f26900 0%, #ed3136 100%, #7d7d7d 100%); }
+  .footer__list {
+    list-style: none;
+    margin-top: 1rem; }
+  .footer__link {
+    text-decoration: none;
+    color: #ffffff; }
+  .footer__link:hover {
+    color: #2A2627; }
+
+@media screen and (max-width: 1024px) {
+  /* index */
+  .hero__subtitulo {
+    padding: 1rem; }
+  .indexSlider {
+    width: 100% !important; }
+  /* Nuestro Equipo */
+  .equipo {
+    width: 30rem;
+    height: 30rem; } }
+
+@media screen and (max-width: 992px) {
+  /* index */
+  .hero__titulo {
+    font-size: 2rem; }
+  /* nuestro espacio */
+  .espacio__instalaciones {
+    padding: 7px; }
+  /* Quienes Somos */
+  .nosotros__img {
+    width: 50%; }
+  .equipo {
+    width: 20rem;
+    height: 20rem; } }
+
+@media screen and (max-width: 768px) {
+  /* quienes somos */
+  .nosotros__section {
+    margin-bottom: -3rem; }
+  .equipo__columna {
+    padding: 0;
+    width: auto; } }
+
+@media screen and (max-width: 425px) {
+  /* index */
+  .hero__subtitulo {
+    display: none; }
+  .hero__img {
+    height: 50vh; }
+  /* quienes somos */
+  .nosotros__img {
+    order: -1;
+    padding: 1rem;
+    width: auto; }
+  .nosotros__texto {
+    flex-direction: column; }
+  .equipo__columna {
+    width: auto; }
+  /* Servicios */
+  .servicios__texto {
+    font-size: small; } }
