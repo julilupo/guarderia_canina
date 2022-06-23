@@ -1,0 +1,6 @@
+﻿* Optimicé el tamaño de las imágenes .jpg, mediante tinyjpg.com.
+* Agregué un <title> personal en cada html, según lo que correspondía.
+* Cambié todos los Lorem por contenido. 
+* Puse nombre alt. en todas las imágenes.
+* Adicioné meta keyword y meta description en cada html.
+* Cambié algunos encabezados para que sea más prolijo la accesibilidad.
