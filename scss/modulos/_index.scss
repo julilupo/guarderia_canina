@@ -6,15 +6,30 @@
     &__titulo{
         font-size: 4rem;
         text-shadow: $shadow;
+        @include large{
+            font-size: 2rem;
+        }
     }
 
     &__subtitulo{
         padding: 0 20rem;
+        @include laptop{
+            padding: 1rem;
+        }        
     }
 
     &__img{
         width: 800px;
         height: 575px;
+        @include mobile{
+            height: 40vh;
+        }
+    }
+
+    &__slider{
+        @include laptop{
+            width: 100% !important;
+        }
     }
 
 }

@@ -1,5 +1,12 @@
 .servicios{
     color: $grey;
+
+    &__texto{
+        @include mobile{            
+            font-size: small;
+        }
+    }
+
     &__img{
         border: $border;
         width: 25rem;
@@ -7,7 +14,7 @@
     }
 
     &__list{
-        list-style: none;
+        list-style: none;        
     }
 
     &__list::before{

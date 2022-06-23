@@ -2,8 +2,26 @@
     color: $grey;
     background-color: $orange;
     background-image: linear-gradient(180deg, #f26900 0%, #ffffff 25%);
+    &__texto{
+        @include mobile{            
+            flex-direction: column;
+        }
+    }
     &__img{
-        border-radius: 50%;
+        border-radius: map-get($estilos, mitad);
+        @include large{
+            width: map-get($estilos, mitad);
+        }
+        @include mobile{
+            order: -1;
+            padding: 1rem;
+            width: auto;
+        }
+    }
+    &__section{
+        @include tablet{
+            margin-bottom: -3rem;
+        }
     }
 }
 
@@ -11,9 +29,26 @@
     border: none;
     min-height: 35rem;
     width: 35rem;
+    @include laptop{
+        width: map-get($estilos, 30rem);
+        height: map-get($estilos, 30rem);
+    }
+    @include large{
+        width: map-get($estilos, 20rem);
+        min-height: map-get($estilos, 20rem)
+    }
     &__img{
+        @extend.nosotros__img;
         height: 300px;
-        width: 50%;
-        border-radius: 50%;
+        width: map-get($estilos, mitad);        
+    }
+    &__columna{
+        @include tablet{
+            padding: 0;
+            width: auto;
+        }
+        @include mobile{           
+            width: auto;
+        }
     }
 }
