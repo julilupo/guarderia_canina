@@ -1,6 +1,10 @@
 .servicios{
     color: $grey;
 
+    &__titulo{
+        text-shadow: $shadow;
+    }
+
     &__texto{
         @include mobile{            
             font-size: small;

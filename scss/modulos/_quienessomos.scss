@@ -2,6 +2,9 @@
     color: $grey;
     background-color: $orange;
     background-image: linear-gradient(180deg, #f26900 0%, #ffffff 25%);
+    &__titulo{
+        @extend.hero__titulo;
+    }
     &__texto{
         @include mobile{            
             flex-direction: column;
@@ -46,9 +49,6 @@
         @include tablet{
             padding: 0;
             width: auto;
-        }
-        @include mobile{           
-            width: auto;
-        }
+        }        
     }
 }

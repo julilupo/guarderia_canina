@@ -4,4 +4,13 @@
     &__texto{
         display: block;
     }
+
+    &__input{
+        border: $border;
+        opacity: 0.75;        
+        &--text{
+            @extend.contacto__input;
+            height: 18rem;
+        }
+    }
 }

@@ -14,11 +14,11 @@ body {
   background-image: url(../Assets/rose-petals.svg);
   background-repeat: no-repeat;
   background-size: cover; }
-  .hero__titulo {
+  .hero__titulo, .nosotros__titulo {
     font-size: 4rem;
     text-shadow: #2A2627 2px 2px 4px; }
     @media screen and (max-width: 992px) {
-      .hero__titulo {
+      .hero__titulo, .nosotros__titulo {
         font-size: 2rem; } }
   .hero__subtitulo {
     padding: 0 20rem; }
@@ -104,12 +104,11 @@ body {
     .equipo__columna {
       padding: 0;
       width: auto; } }
-  @media screen and (max-width: 425px) {
-    .equipo__columna {
-      width: auto; } }
 
 .servicios {
   color: #2A2627; }
+  .servicios__titulo {
+    text-shadow: #2A2627 2px 2px 4px; }
   @media screen and (max-width: 425px) {
     .servicios__texto {
       font-size: small; } }
@@ -154,6 +153,11 @@ body {
   color: #2A2627; }
   .contacto__texto {
     display: block; }
+  .contacto__input, .contacto__input--text {
+    border: #F26900 solid 2px;
+    opacity: 0.75; }
+    .contacto__input--text {
+      height: 18rem; }
 
 .footer {
   background: linear-gradient(180deg, #7d7d7d 0%, #f26900 0%, #ed3136 100%, #7d7d7d 100%); }
