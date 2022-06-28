@@ -18,6 +18,9 @@
         @include large{
             padding: 7px;
         }
+        @include mobile{
+            max-height: 230px;
+        }
     }
 
 }

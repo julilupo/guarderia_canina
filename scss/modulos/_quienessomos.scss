@@ -13,12 +13,11 @@
     &__img{
         border-radius: map-get($estilos, mitad);
         @include large{
-            width: map-get($estilos, mitad);
+            max-height: 160px;
         }
         @include mobile{
             order: -1;
-            padding: 1rem;
-            width: auto;
+            max-height: 160px;
         }
     }
     &__section{

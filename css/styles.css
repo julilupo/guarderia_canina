@@ -63,6 +63,9 @@ body {
     @media screen and (max-width: 992px) {
       .espacio__instalaciones {
         padding: 7px; } }
+    @media screen and (max-width: 425px) {
+      .espacio__instalaciones {
+        max-height: 230px; } }
 
 .nosotros {
   color: #2A2627;
@@ -75,12 +78,11 @@ body {
     border-radius: 50%; }
     @media screen and (max-width: 992px) {
       .nosotros__img, .equipo__img {
-        width: 50%; } }
+        max-height: 160px; } }
     @media screen and (max-width: 425px) {
       .nosotros__img, .equipo__img {
         order: -1;
-        padding: 1rem;
-        width: auto; } }
+        max-height: 160px; } }
   @media screen and (max-width: 768px) {
     .nosotros__section {
       margin-bottom: -3rem; } }
@@ -116,6 +118,10 @@ body {
     border: #F26900 solid 2px;
     width: 25rem;
     height: 19rem; }
+    @media screen and (max-width: 425px) {
+      .servicios__img {
+        max-width: 250px;
+        max-height: 250px; } }
   .servicios__list {
     list-style: none; }
   .servicios__list::before {
