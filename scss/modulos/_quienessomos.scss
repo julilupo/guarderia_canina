@@ -41,6 +41,8 @@
     }
     &__img{
         @extend.nosotros__img;
+        padding: 0.5rem;
+        border: $border;
         height: 300px;
         width: map-get($estilos, mitad);        
     }

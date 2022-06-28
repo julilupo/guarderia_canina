@@ -100,6 +100,8 @@ body {
       width: 20rem;
       min-height: 20rem; } }
   .equipo__img {
+    padding: 0.5rem;
+    border: #F26900 solid 2px;
     height: 300px;
     width: 50%; }
   @media screen and (max-width: 768px) {
