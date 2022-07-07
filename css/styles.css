@@ -110,6 +110,8 @@ body {
   color: #2A2627; }
   .servicios__titulo {
     text-shadow: #2A2627 2px 2px 4px; }
+    .servicios__titulo-parrafo {
+      font-size: 18px; }
   @media screen and (max-width: 425px) {
     .servicios__texto {
       font-size: small; } }
@@ -121,6 +123,9 @@ body {
       .servicios__img {
         max-width: 250px;
         max-height: 250px; } }
+    @media screen and (max-width: 768px) {
+      .servicios__imgOtra {
+        order: -1; } }
   .servicios__list {
     list-style: none; }
   .servicios__list::before {

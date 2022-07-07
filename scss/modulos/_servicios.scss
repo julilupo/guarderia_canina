@@ -3,6 +3,9 @@
 
     &__titulo{
         text-shadow: $shadow;
+        &-parrafo{
+            font-size: 18px;
+        }
     }
 
     &__texto{
@@ -18,6 +21,11 @@
         @include mobile{
             max-width: 250px;
             max-height: 250px;
+        }
+        &Otra{
+            @include tablet{
+                order: -1;
+            }
         }
     }
 
