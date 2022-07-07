@@ -23,8 +23,7 @@ body {
   background-image: url(../Assets/Index-background.webp);
   background-repeat: no-repeat;
   background-position: center;
-  background-size: cover;
-  background-attachment: fixed; }
+  background-size: cover; }
   .hero__titulo, .nosotros__titulo {
     font-size: 3rem;
     text-shadow: #2A2627 2px 2px 4px; }
