@@ -1,12 +1,12 @@
 .hero{
-    background-image: url(../Assets/Index-background.jpg);
+    background-image: url(../Assets/Index-background.webp);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
     background-attachment: fixed;
     
     &__titulo{
-        font-size: 4rem;
+        font-size: 3rem;
         text-shadow: $shadow;
         @include large{
             font-size: 2rem;
@@ -14,6 +14,7 @@
     }
 
     &__subtitulo{
+        font-size: 1.4rem;
         text-shadow: $shadow;
         @include laptop{
             padding: 1rem;
@@ -43,6 +44,8 @@
 }
 
 .boton {
+    font-size: 1.3rem;
+    padding: 0.8rem;
     border: $border;
     background-color: $orange;
     color: #ffffff;

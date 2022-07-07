@@ -14,18 +14,19 @@ body {
     color: #2A2627; }
 
 .hero {
-  background-image: url(../Assets/Index-background.jpg);
+  background-image: url(../Assets/Index-background.webp);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   background-attachment: fixed; }
   .hero__titulo, .nosotros__titulo {
-    font-size: 4rem;
+    font-size: 3rem;
     text-shadow: #2A2627 2px 2px 4px; }
     @media screen and (max-width: 992px) {
       .hero__titulo, .nosotros__titulo {
         font-size: 2rem; } }
   .hero__subtitulo {
+    font-size: 1.4rem;
     text-shadow: #2A2627 2px 2px 4px; }
     @media screen and (max-width: 1024px) {
       .hero__subtitulo {
@@ -45,6 +46,8 @@ body {
   color: #2A2627; }
 
 .boton {
+  font-size: 1.3rem;
+  padding: 0.8rem;
   border: #F26900 solid 2px;
   background-color: #F26900;
   color: #ffffff; }
