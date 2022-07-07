@@ -1,6 +1,11 @@
-.navegador {
-    background-color: $orange;
-
+.navegador{
+    font-size: 18px;
+    background: rgb(242,105,0);
+    
+        &Otro{
+            @extend.navegador;
+            background: linear-gradient(180deg, rgba(242,105,0,1) 0%, rgba(242,105,0,0.5) 65%, rgba(242,105,0,0) 100%);
+        }
         &__logo{
             width: 8rem;
         }

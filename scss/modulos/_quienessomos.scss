@@ -1,55 +1,47 @@
 .nosotros{
+    margin-top: -1px;
     color: $grey;
     background-color: $orange;
     background-image: linear-gradient(180deg, #f26900 0%, #ffffff 25%);
+
     &__titulo{
         @extend.hero__titulo;
     }
+
     &__texto{
         @include mobile{            
             flex-direction: column;
         }
     }
+
     &__img{
+        max-width: 17rem;
         border-radius: map-get($estilos, mitad);
-        @include large{
-            max-height: 160px;
-        }
-        @include mobile{
-            order: -1;
-            max-height: 160px;
-        }
-    }
-    &__section{
         @include tablet{
-            margin-bottom: -3rem;
+            display: none;
+        }
+    }   
+    
+    &__columna{
+        min-height: 25rem;
+        @include tablet{
+            flex-direction: column;
         }
     }
 }
 
+
 .equipo{
     border: none;
-    min-height: 35rem;
-    width: 35rem;
-    @include laptop{
-        width: map-get($estilos, 30rem);
-        height: map-get($estilos, 30rem);
-    }
-    @include large{
-        width: map-get($estilos, 20rem);
-        min-height: map-get($estilos, 20rem)
-    }
+    height: 32rem;
+    width: 32rem;
+
     &__img{
-        @extend.nosotros__img;
+        border-radius: map-get($estilos, mitad);
         padding: 0.5rem;
         border: $border;
-        height: 300px;
+        max-height: 250px;
         width: map-get($estilos, mitad);        
     }
-    &__columna{
-        @include tablet{
-            padding: 0;
-            width: auto;
-        }        
-    }
 }
+

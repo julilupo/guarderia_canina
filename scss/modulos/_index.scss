@@ -1,8 +1,10 @@
 .hero{
-    background-image: url(../Assets/rose-petals.svg);
+    background-image: url(../Assets/Index-background.jpg);
     background-repeat: no-repeat;
+    background-position: center;
     background-size: cover;
-
+    background-attachment: fixed;
+    
     &__titulo{
         font-size: 4rem;
         text-shadow: $shadow;
@@ -12,21 +14,22 @@
     }
 
     &__subtitulo{
-        padding: 0 20rem;
+        text-shadow: $shadow;
         @include laptop{
             padding: 1rem;
         }        
     }
 
     &__img{
-        width: 800px;
-        height: 575px;
+        @extend.hero__slider;
         @include mobile{
             height: 40vh;
         }
     }
 
     &__slider{
+        max-width: 35rem;
+        max-height: 35rem;
         @include laptop{
             width: 100% !important;
         }

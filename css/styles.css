@@ -1,8 +1,11 @@
 body {
   font-family: "Rubik", sans-serif; }
 
-.navegador {
-  background-color: #F26900; }
+.navegador, .navegadorOtro {
+  font-size: 18px;
+  background: #f26900; }
+  .navegadorOtro {
+    background: linear-gradient(180deg, #f26900 0%, rgba(242, 105, 0, 0.5) 65%, rgba(242, 105, 0, 0) 100%); }
   .navegador__logo {
     width: 8rem; }
   .navegador__link {
@@ -11,9 +14,11 @@ body {
     color: #2A2627; }
 
 .hero {
-  background-image: url(../Assets/rose-petals.svg);
+  background-image: url(../Assets/Index-background.jpg);
   background-repeat: no-repeat;
-  background-size: cover; }
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed; }
   .hero__titulo, .nosotros__titulo {
     font-size: 4rem;
     text-shadow: #2A2627 2px 2px 4px; }
@@ -21,19 +26,19 @@ body {
       .hero__titulo, .nosotros__titulo {
         font-size: 2rem; } }
   .hero__subtitulo {
-    padding: 0 20rem; }
+    text-shadow: #2A2627 2px 2px 4px; }
     @media screen and (max-width: 1024px) {
       .hero__subtitulo {
         padding: 1rem; } }
-  .hero__img {
-    width: 800px;
-    height: 575px; }
-    @media screen and (max-width: 425px) {
-      .hero__img {
-        height: 40vh; } }
-  @media screen and (max-width: 1024px) {
-    .hero__slider {
-      width: 100% !important; } }
+  @media screen and (max-width: 425px) {
+    .hero__img {
+      height: 40vh; } }
+  .hero__slider, .hero__img {
+    max-width: 35rem;
+    max-height: 35rem; }
+    @media screen and (max-width: 1024px) {
+      .hero__slider, .hero__img {
+        width: 100% !important; } }
 
 .carta {
   border: #F26900 solid 2px;
@@ -68,46 +73,35 @@ body {
         max-height: 230px; } }
 
 .nosotros {
+  margin-top: -1px;
   color: #2A2627;
   background-color: #F26900;
   background-image: linear-gradient(180deg, #f26900 0%, #ffffff 25%); }
   @media screen and (max-width: 425px) {
     .nosotros__texto {
       flex-direction: column; } }
-  .nosotros__img, .equipo__img {
+  .nosotros__img {
+    max-width: 17rem;
     border-radius: 50%; }
-    @media screen and (max-width: 992px) {
-      .nosotros__img, .equipo__img {
-        max-height: 160px; } }
-    @media screen and (max-width: 425px) {
-      .nosotros__img, .equipo__img {
-        order: -1;
-        max-height: 160px; } }
-  @media screen and (max-width: 768px) {
-    .nosotros__section {
-      margin-bottom: -3rem; } }
+    @media screen and (max-width: 768px) {
+      .nosotros__img {
+        display: none; } }
+  .nosotros__columna {
+    min-height: 25rem; }
+    @media screen and (max-width: 768px) {
+      .nosotros__columna {
+        flex-direction: column; } }
 
 .equipo {
   border: none;
-  min-height: 35rem;
-  width: 35rem; }
-  @media screen and (max-width: 1024px) {
-    .equipo {
-      width: 30rem;
-      height: 30rem; } }
-  @media screen and (max-width: 992px) {
-    .equipo {
-      width: 20rem;
-      min-height: 20rem; } }
+  height: 32rem;
+  width: 32rem; }
   .equipo__img {
+    border-radius: 50%;
     padding: 0.5rem;
     border: #F26900 solid 2px;
-    height: 300px;
+    max-height: 250px;
     width: 50%; }
-  @media screen and (max-width: 768px) {
-    .equipo__columna {
-      padding: 0;
-      width: auto; } }
 
 .servicios {
   color: #2A2627; }
