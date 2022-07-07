@@ -6,11 +6,17 @@ body {
   background: #f26900; }
   .navegadorOtro {
     background: linear-gradient(180deg, #f26900 0%, rgba(242, 105, 0, 0.5) 65%, rgba(242, 105, 0, 0) 100%); }
+  @media screen and (max-width: 992px) {
+    .navegador__color {
+      color: #2A2627 !important; } }
   .navegador__logo {
     width: 8rem; }
-  .navegador__link {
+  .navegador__link, .navegador__linkDos {
     color: #ffffff; }
-  .navegador__link:hover {
+    @media screen and (max-width: 992px) {
+      .navegador__linkDos {
+        color: #2A2627; } }
+  .navegador__link:hover, .navegador__linkDos:hover {
     color: #2A2627; }
 
 .hero {

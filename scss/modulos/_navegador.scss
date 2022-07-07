@@ -6,12 +6,23 @@
             @extend.navegador;
             background: linear-gradient(180deg, rgba(242,105,0,1) 0%, rgba(242,105,0,0.5) 65%, rgba(242,105,0,0) 100%);
         }
+        &__color{
+            @include large{
+                color: $grey!important;
+            }
+        }
         &__logo{
             width: 8rem;
         }
         
         &__link{
             color: #ffffff;
+            &Dos{
+                @extend.navegador__link;
+                @include large{
+                    color: $grey;
+                }
+            }
         }
 
         &__link:hover{
