@@ -63,7 +63,10 @@ body {
   .espacio__titulo {
     text-shadow: #2A2627 2px 2px 4px; }
   .espacio__img {
-    border-radius: 10px; }
+    border-radius: 15px; }
+  @media screen and (max-width: 992px) {
+    .espacio__intro {
+      flex-direction: column; } }
   .espacio__instalaciones {
     border-radius: 10px;
     width: 25rem;

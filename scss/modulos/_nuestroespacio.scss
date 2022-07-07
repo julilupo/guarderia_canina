@@ -8,7 +8,13 @@
     }
 
     &__img{
-        border-radius: 10px;
+        border-radius: 15px;
+    }
+
+    &__intro{
+        @include large{
+            flex-direction: column;
+        }
     }
 
     &__instalaciones{
